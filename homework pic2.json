@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/week1_homework_pic2data.csv"
+  },
+  "height": 300,
+  "width": "container",
+  "mark": {"type": "line"},
+  "config": {"view": {"stroke": "transparent"}},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false, "labelAngle": 0}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [30, 70]},
+      "axis": {
+        "grid": true,
+        "labelFontSize": 12,
+        "title": "%",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 10,
+        "titleX": 5,
+        "titleY": 15
+      }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "sort": [],
+      "title": null,
+      "scale": {
+        "range": ["#e6224b", "#122b39", "#36b7b4", "#f4c245", "#00a767"]
+      },
+      "legend": {"orient": "bottom-left", "labelFontSize": 11}
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Date",
+        "timeUnit": "yearmonth"
+      },
+      {"field": "metric", "type": "nominal", "title": "Type"},
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Proportion of total (%)"
+      }
+    ]
+  },
+  "autosize": {"type": "pad", "contains": "padding", "resize": true}
+}

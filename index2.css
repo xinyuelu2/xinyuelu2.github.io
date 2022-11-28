@@ -1,0 +1,65 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my second css file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+
+/*book on color = joseph albers - international of color */
+
+body{
+    background-color: rgb(204, 234, 234);
+ 
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1, h3, p{
+    color:rgb(0, 0, 0);
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+}
+    
+.myWeek1{
+    margin: auto;
+    max-width: 600px;
+    background-color: whitesmoke;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(52, 79, 159);
+
+}
+
+
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: white;
+    width:450px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(52, 79, 159);
+
+    
+}
+    
+/* Set the apperance for a particular chart */
+#chart1{
+    background-color: white;
+    width:450px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(52, 79, 159);
+
+
+}
+
+
+
