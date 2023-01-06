@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.2.json",
+  "description": "Energy costs index",
+  "height": 300,
+  "width": "container",
+   "title": {
+    "text": "Commodity Markets Outlook",
+    "subtitle": "real commodity price index, a weighted average of selected commodity prices based on spot or futures prices",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "locale": {
+      "number": {
+        "decimal": ".",
+        "thousands": ",",
+        "grouping": [3],
+        "currency": ["", " %"]
+      }
+    }
+  },
+ "transform": [
+    {"filter": {"selection": "SectorSelector"}},
+    {
+      "filter": {
+        "field": "commodity",
+        "oneOf": [
+          "Energy",
+          "Non-energy",
+          "Agriculture",
+          "Beverages",
+          "Food",
+          "Oils & Meals",
+          "Grains",
+          "Other Food",
+          "Raw Materials",
+          "Timber",
+          "OTHERRAWMAT",
+          "Fertilizers",
+          "Metals  and Minerals",
+          "Base Metals (ex. iron ore)",
+          "Precious Metals"
+        ]
+      }
+    }
+  ],
+  "selection": {
+    "SectorSelector": {
+      "type": "single",
+      "fields": ["commodity"],
+      "bind": {
+        "input": "select",
+        "options": [
+           null,
+          "Energy",
+          "Non-energy",
+          "Agriculture",
+          "Beverages",
+          "Food",
+          "Oils & Meals",
+          "Grains",
+          "Other Food",
+          "Raw Materials",
+          "Timber",
+          "OTHERRAWMAT",
+          "Fertilizers",
+          "Metals  and Minerals",
+          "Base Metals (ex. iron ore)",
+          "Precious Metals"
+        ],
+        "name": "type"
+      }
+    }
+  },
+
+      "data": {
+        "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/homework3_version4.json"
+      },
+  
+      "mark": {"type": "line", "color": "#122b39", "point": "transparent"},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "year",
+          "title": null,
+          
+          "axis": {
+            "grid": false,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5,
+            "offset": 0,
+            "domain": false,
+            "labelAngle": -35,
+            "labelOffset": 7
+          }
+        },
+        "y": {
+          "field": "commodity_price_indices",
+          "type": "quantitative",
+          "axis": {
+            "grid": true,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5
+          },
+          "title": null,
+          "scale": {"domain": [0, 200]}
+        },
+        "color": {
+          "field": "commodity", 
+          "title": null,
+          "scale": {"scheme": "set2", "reverse": true},
+          "legend": {
+            "orient": "top-left",
+            "symbolStrokeWidth": 0.5,
+            "labelFontSize": 7
+          }
+        },
+        "strokeDash": {"field": "dash", "legend": null},
+        "tooltip": [
+          {"field": "commodity"},
+      {
+        "field": "date",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "commodity_price_indices",
+        "type": "quantitative",
+        "title": "index(real)"
+      }
+        ]
+      },
+  "autosize": {"type": "pad", "contains": "padding", "resize": true}
+}
