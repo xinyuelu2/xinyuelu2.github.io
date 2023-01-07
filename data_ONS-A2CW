@@ -1,0 +1,429 @@
+{
+    "description": {
+        "cdid": "A2CW",
+        "contact": {
+            "email": "gdp@ons.gov.uk",
+            "name": "Niamh McAuley",
+            "telephone": "+44 1633 455284"
+        },
+        "datasetId": "QNA",
+        "datasetUri": "/economy/grossdomesticproductgdp/datasets/quarterlynationalaccounts",
+        "date": "2021",
+        "nextRelease": "31 March 2023",
+        "number": "57.9",
+        "preUnit": "",
+        "releaseDate": "2022-12-22T00:00:00.000Z",
+        "sampleSize": "0",
+        "source": "",
+        "title": "PP: Taxes less subsidies on products and production, growth annual",
+        "unit": "%"
+    },
+    "months": [],
+    "quarters": [],
+    "relatedDatasets": [
+        {
+            "uri": "/economy/grossdomesticproductgdp/datasets/quarterlynationalaccounts"
+        }
+    ],
+    "relatedDocuments": [
+        {
+            "uri": "/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/latest"
+        }
+    ],
+    "section": {},
+    "sourceDatasets": [],
+    "type": "timeseries",
+    "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna",
+    "versions": [
+        {
+            "correctionNotice": "",
+            "label": "v1",
+            "updateDate": "2016-09-30T08:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v1"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v2",
+            "updateDate": "2016-12-23T09:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v2"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v3",
+            "updateDate": "2017-03-31T08:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v3"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v4",
+            "updateDate": "2017-06-30T08:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v4"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v5",
+            "updateDate": "2017-09-29T08:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v5"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v6",
+            "updateDate": "2017-12-22T09:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v6"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v7",
+            "updateDate": "2018-03-29T08:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v7"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v8",
+            "updateDate": "2018-06-29T08:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v8"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v9",
+            "updateDate": "2018-09-28T08:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v9"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v10",
+            "updateDate": "2018-12-21T08:21:11.145Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v10"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v11",
+            "updateDate": "2019-03-29T07:43:14.764Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v11"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v12",
+            "updateDate": "2019-06-28T08:30:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v12"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v13",
+            "updateDate": "2019-12-20T07:41:13.134Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v13"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v14",
+            "updateDate": "2020-03-31T06:00:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v14"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v15",
+            "updateDate": "2020-06-30T06:00:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v15"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v16",
+            "updateDate": "2020-09-30T06:00:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v16"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v17",
+            "updateDate": "2020-12-22T06:10:27.714Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v17"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v18",
+            "updateDate": "2021-03-31T06:00:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v18"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v19",
+            "updateDate": "2021-06-30T05:16:34.264Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v19"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v20",
+            "updateDate": "2021-12-22T07:00:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v20"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v21",
+            "updateDate": "2022-03-31T06:00:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v21"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v22",
+            "updateDate": "2022-06-30T06:00:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v22"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v23",
+            "updateDate": "2022-12-22T07:00:00.000Z",
+            "uri": "/economy/grossdomesticproductgdp/timeseries/a2cw/qna/previous/v23"
+        }
+    ],
+    "years": [
+        {
+            "date": "1997",
+            "label": "1997",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2018-09-27T23:00:00.000Z",
+            "value": "8.0",
+            "year": "1997"
+        },
+        {
+            "date": "1998",
+            "label": "1998",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "7.1",
+            "year": "1998"
+        },
+        {
+            "date": "1999",
+            "label": "1999",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "8.2",
+            "year": "1999"
+        },
+        {
+            "date": "2000",
+            "label": "2000",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2018-09-27T23:00:00.000Z",
+            "value": "6.5",
+            "year": "2000"
+        },
+        {
+            "date": "2001",
+            "label": "2001",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "1.8",
+            "year": "2001"
+        },
+        {
+            "date": "2002",
+            "label": "2002",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "3.7",
+            "year": "2002"
+        },
+        {
+            "date": "2003",
+            "label": "2003",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "4.2",
+            "year": "2003"
+        },
+        {
+            "date": "2004",
+            "label": "2004",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "5.8",
+            "year": "2004"
+        },
+        {
+            "date": "2005",
+            "label": "2005",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2017-09-28T23:00:00.000Z",
+            "value": "1.8",
+            "year": "2005"
+        },
+        {
+            "date": "2006",
+            "label": "2006",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2018-09-27T23:00:00.000Z",
+            "value": "5.1",
+            "year": "2006"
+        },
+        {
+            "date": "2007",
+            "label": "2007",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2017-09-28T23:00:00.000Z",
+            "value": "5.5",
+            "year": "2007"
+        },
+        {
+            "date": "2008",
+            "label": "2008",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2017-09-28T23:00:00.000Z",
+            "value": "-1.1",
+            "year": "2008"
+        },
+        {
+            "date": "2009",
+            "label": "2009",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2017-12-22T00:00:00.000Z",
+            "value": "-7.0",
+            "year": "2009"
+        },
+        {
+            "date": "2010",
+            "label": "2010",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2018-09-27T23:00:00.000Z",
+            "value": "16.8",
+            "year": "2010"
+        },
+        {
+            "date": "2011",
+            "label": "2011",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2020-12-22T00:00:00.000Z",
+            "value": "9.2",
+            "year": "2011"
+        },
+        {
+            "date": "2012",
+            "label": "2012",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "2.9",
+            "year": "2012"
+        },
+        {
+            "date": "2013",
+            "label": "2013",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2020-12-22T00:00:00.000Z",
+            "value": "5.4",
+            "year": "2013"
+        },
+        {
+            "date": "2014",
+            "label": "2014",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "4.9",
+            "year": "2014"
+        },
+        {
+            "date": "2015",
+            "label": "2015",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2020-12-22T00:00:00.000Z",
+            "value": "2.6",
+            "year": "2015"
+        },
+        {
+            "date": "2016",
+            "label": "2016",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2020-12-22T00:00:00.000Z",
+            "value": "3.6",
+            "year": "2016"
+        },
+        {
+            "date": "2017",
+            "label": "2017",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2019-12-20T00:00:00.000Z",
+            "value": "3.8",
+            "year": "2017"
+        },
+        {
+            "date": "2018",
+            "label": "2018",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2021-12-22T00:00:00.000Z",
+            "value": "3.0",
+            "year": "2018"
+        },
+        {
+            "date": "2019",
+            "label": "2019",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2022-12-22T00:00:00.000Z",
+            "value": "2.5",
+            "year": "2019"
+        },
+        {
+            "date": "2020",
+            "label": "2020",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2022-06-29T23:00:00.000Z",
+            "value": "-50.1",
+            "year": "2020"
+        },
+        {
+            "date": "2021",
+            "label": "2021",
+            "month": "",
+            "quarter": "",
+            "sourceDataset": "QNA",
+            "updateDate": "2022-12-22T00:00:00.000Z",
+            "value": "57.9",
+            "year": "2021"
+        }
+    ]
+}
