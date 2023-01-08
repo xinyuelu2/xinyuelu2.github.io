@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/pjcht4.csv"
+    },
+    "transform": [
+      {"calculate": "datum.unit_volume_thousand*10", "as":"sale_volumes"},
+      {"filter": {"selection": "SectorSelector"}},
+      {
+        "filter": {
+          "field": "product_type",
+          "oneOf": [
+            "Hardware",
+            "of which Nintendo Switch",
+            "of which Nintendo Switch Lite",
+            "Software"
+          ]
+        }
+      }
+    ],
+    "selection": {
+      "SectorSelector": {
+        "type": "single",
+        "fields": ["product_type"],
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Hardware",
+            "of which Nintendo Switch",
+            "of which Nintendo Switch Lite",
+            "Software"
+          ],
+          "name": "product type"
+        }
+      }
+    },
+    "title": {
+      "text": "NINTENDO's Hardware and Software Sale Volumes",
+      "subtitle":["sale volumes ('000) of hardwares with different models and softwares and sections in 3 main consuming regions rough ",
+      "(hardware includes Switch, OLED Switch, and Switch Lite)",
+      "Source:https://www.nintendo.co.jp/ir/en/finance/historical_data/index.html"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "width": 380,
+    "height": 250,
+    "mark": "area",
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "sort":[],"title": null},
+      "y": {"field": "sale_volumes", "sort":[],"type": "quantitative", "title": "units in thousand volumes"},
+      "color": {
+        "field": "region",
+        "scale": {"scheme": "set3"},
+        "legend": {"orient": "top-left", "title": null}
+      },
+      "tooltip": [
+        {"field": "region"},
+        {"field": "product_type"},
+        {"field": "date", "formatType": "time", "format": "%Y"},
+        {"field": "sale_volumes","title":"unit_volume_thousand"}
+      ]
+    }
+  }
+  
+  
