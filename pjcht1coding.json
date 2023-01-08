@@ -3,7 +3,7 @@
   "title": {
     "text": "NINTENDO'S Consolidated Statements of Income",
     "subtitle": [
-      " Net Sales, GrossProfit Ratio and Operation Profit Ratio.",
+      " Net Sales, GrossProfit Ratio (dark green line) and Operation Profit Ratio(light green line).",
       "Source:https://www.nintendo.co.jp/ir/en/finance/highlight/index.html."
     ],
     "subtitleFontStyle": "italic",
@@ -136,8 +136,9 @@
           }
         ]
       }
-    },
+    }
   ],
   "resolve": {"scale": {"y": "independent"}},
   "autosize": {"type": "pad", "contains": "padding", "resize": true}
 }
+
