@@ -1,0 +1,16 @@
+date,expense_type,expenses(million yen),net sales(million yen)
+2018,"Selling, general and administrative expenses",225983.0,1055682.0
+2019,"Selling, general and administrative expenses",251488.0,1200560.0
+2020,"Selling, general and administrative expenses",289331.0,1308519.0
+2021,"Selling, general and administrative expenses",329838.0,1758910.0
+2022,"Selling, general and administrative expenses",353283.0,1695344.0
+2018,Research and development expenses,64032.0,1055682.0
+2019,Research and development expenses,69628.0,1200560.0
+2020,Research and development expenses,84159.0,1308519.0
+2021,Research and development expenses,93253.0,1758910.0
+2022,Research and development expenses,102199.0,1695344.0
+2018,Advertising expenses,72616.0,1055682.0
+2019,Advertising expenses,75421.0,1200560.0
+2020,Advertising expenses,76003.0,1308519.0
+2021,Advertising expenses,84450.0,1758910.0
+2022,Advertising expenses,93838.0,1695344.0
