@@ -1,0 +1,111 @@
+product_type,region,date,unit_volume_thousand
+Hardware,Japan,2017,0
+Hardware,Japan,2018,378
+Hardware,Japan,2019,385
+Hardware,Japan,2020,521
+Hardware,Japan,2021,660
+Hardware,Japan,2022,519
+Hardware,The Americas,2017,0
+Hardware,The Americas,2018,594
+Hardware,The Americas,2019,688
+Hardware,The Americas,2020,811
+Hardware,The Americas,2021,1115
+Hardware,The Americas,2022,876
+Hardware,Europe,2017,0
+Hardware,Europe,2018,379
+Hardware,Europe,2019,455
+Hardware,Europe,2020,534
+Hardware,Europe,2021,715
+Hardware,Europe,2022,602
+Hardware,Other,2017,0
+Hardware,Other,2018,154
+Hardware,Other,2019,169
+Hardware,Other,2020,237
+Hardware,Other,2021,393
+Hardware,Other,2022,309
+Hardware,Total,2017,0
+Hardware,Total,2018,1505
+Hardware,Total,2019,1695
+Hardware,Total,2020,2103
+Hardware,Total,2021,2883
+Hardware,Total,2022,2306
+of which Nintendo Switch,Japan,2017,0
+of which Nintendo Switch,Japan,2018,378
+of which Nintendo Switch,Japan,2019,385
+of which Nintendo Switch,Japan,2020,321
+of which Nintendo Switch,Japan,2021,478
+of which Nintendo Switch,Japan,2022,256
+of which Nintendo Switch,The Americas,2017,0
+of which Nintendo Switch,The Americas,2018,594
+of which Nintendo Switch,The Americas,2019,688
+of which Nintendo Switch,The Americas,2020,578
+of which Nintendo Switch,The Americas,2021,707
+of which Nintendo Switch,The Americas,2022,522
+of which Nintendo Switch,Europe,2017,0
+of which Nintendo Switch,Europe,2018,379
+of which Nintendo Switch,Europe,2019,455
+of which Nintendo Switch,Europe,2020,400
+of which Nintendo Switch,Europe,2021,502
+of which Nintendo Switch,Europe,2022,404
+of which Nintendo Switch,Other,2017,0
+of which Nintendo Switch,Other,2018,154
+of which Nintendo Switch,Other,2019,169
+of which Nintendo Switch,Other,2020,185
+of which Nintendo Switch,Other,2021,345
+of which Nintendo Switch,Other,2022,174
+of which Nintendo Switch,Total,2017,0
+of which Nintendo Switch,Total,2018,1505
+of which Nintendo Switch,Total,2019,1695
+of which Nintendo Switch,Total,2020,1483
+of which Nintendo Switch,Total,2021,2032
+of which Nintendo Switch,Total,2022,1356
+of which Nintendo Switch – OLED Model,Japan,2022,161
+of which Nintendo Switch – OLED Model,The Americas,2022,194
+of which Nintendo Switch – OLED Model,Europe,2022,112
+of which Nintendo Switch – OLED Model,Other,2022,113
+of which Nintendo Switch – OLED Model,Total,2022,580
+of which Nintendo Switch Lite,Japan,2020,200
+of which Nintendo Switch Lite,Japan,2021,181
+of which Nintendo Switch Lite,Japan,2022,102
+of which Nintendo Switch Lite,The Americas,2020,233
+of which Nintendo Switch Lite,The Americas,2021,409
+of which Nintendo Switch Lite,The Americas,2022,159
+of which Nintendo Switch Lite,Europe,2020,134
+of which Nintendo Switch Lite,Europe,2021,213
+of which Nintendo Switch Lite,Europe,2022,86
+of which Nintendo Switch Lite,Other,2020,53
+of which Nintendo Switch Lite,Other,2021,48
+of which Nintendo Switch Lite,Other,2022,22
+of which Nintendo Switch Lite,Total,2020,619
+of which Nintendo Switch Lite,Total,2021,851
+of which Nintendo Switch Lite,Total,2022,370
+Software,Japan,2017,0
+Software,Japan,2018,1226
+Software,Japan,2019,2148
+Software,Japan,2020,3256
+Software,Japan,2021,4502
+Software,Japan,2022,4214
+Software,The Americas,2017,0
+Software,The Americas,2018,2752
+Software,The Americas,2019,5394
+Software,The Americas,2020,7428
+Software,The Americas,2021,10242
+Software,The Americas,2022,10827
+Software,Europe,2017,0
+Software,Europe,2018,1917
+Software,Europe,2019,3516
+Software,Europe,2020,5017
+Software,Europe,2021,6624
+Software,Europe,2022,6578
+Software,Other,2017,0
+Software,Other,2018,456
+Software,Other,2019,797
+Software,Other,2020,1171
+Software,Other,2021,1720
+Software,Other,2022,1888
+Software,Total,2017,0
+Software,Total,2018,6351
+Software,Total,2019,11855
+Software,Total,2020,16872
+Software,Total,2021,23088
+Software,Total,2022,23507
