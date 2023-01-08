@@ -1,0 +1,111 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.2.json",
+    "title": {
+      "text": "NINTENDO'S Expenses and Net Sales",
+      "subtitle": [
+        "Instead of regression model, connected scatterplot between 3 operation expenses and net sales from 2018 to 2022 may indicate their relationship more clealier for the lake of data.",
+        "Source:https://www.nintendo.co.jp/ir/en/finance/highlight/index.html."
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle"
+        },
+    "height": "container",
+    "width": "container",
+    "config": {
+      "view": {"stroke": "transparent"},
+      "locale": {
+        "number": {
+          "decimal": ".",
+          "thousands": ",",
+          "grouping": [3],
+          "currency": ["", " %"]
+        }
+      }
+    },
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/pjchart2.csv"
+        },
+        "mark": {"type": "line", "point": true},
+        "encoding": {
+          "x": {
+            "field": "net sales(million yen)",
+            "type": "quantitative",
+            "title": "net sales(million yen)",
+            "scale": {"zero": false}
+            
+          },
+          "y": {
+            "field": "expenses(million yen)",
+            "type": "quantitative",
+            "axis": {
+              "grid": true,
+              "gridOpacity": 0.6,
+              "ticks": false,
+              "labelPadding": 5
+            },
+            "scale": {"zero": false},
+            "title": "expenses(million yen)"
+          },
+          "color": {
+            "field": "expense_type",
+            "title": null,
+            "scale": {"scheme": "set2", "reverse": true},
+            "legend": {
+              "orient": "top-left",
+              "symbolStrokeWidth": 2.5,
+              "labelFontSize": 11
+            }
+          },
+          "strokeDash": {"field": "dash", "legend": null},
+          "tooltip": [
+            {
+              "field": "date",
+              "type": "temporal",
+              "title": "Date",
+              "timeUnit": "year"
+            },
+            {"field": "expense_type", "type": "nominal", "title": "expense"},
+            {"field": "expenses(million yen)", "type": "quantitative", "title": "expenses(million yen)"},
+            {
+              "field": "net sales(million yen)",
+              "type": "quantitative",
+              "title": "net sales(million yen)"
+            }
+          ]
+        },
+        "transform": [
+         {"filter": {"selection": "SectorSelector"}},
+         {
+        "filter": {
+          "field": "expense_type",
+          "oneOf": [
+            "Selling, general and administrative expenses",
+            "Research and development expenses",
+            "Advertising expenses"
+          ]
+        }
+      }
+    ],
+    "selection": {
+      "SectorSelector": {
+        "type": "single",
+        "fields": ["expense_type"],
+        "bind": {
+          "input": "select",
+          "options": [
+             null,
+            "Selling, general and administrative expenses",
+            "Research and development expenses",
+            "Advertising expenses"
+          ],
+          "name": "expense_type"
+        }
+      }
+    }
+      }
+    ],
+    "autosize": {"type": "pad", "contains": "padding", "resize": true}
+  }
