@@ -12,7 +12,8 @@
 /*book on color = joseph albers - international of color */
 
 body{
-    background-color: rgb(204, 234, 234);
+    background-image: url("IMG_8197\ 2.JPG");
+    background-color: white;
  
 }
 
@@ -26,13 +27,13 @@ h1, h3, p{
     
 .myWeek1{
     margin: auto;
-    max-width: 600px;
+    max-width: 800px;
     background-color: whitesmoke;
 
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: rgb(52, 79, 159);
+    border-color: rgb(254, 5, 5);
 
 }
 
@@ -44,7 +45,7 @@ h1, h3, p{
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    border-color: rgb(52, 79, 159);
+    border-color: gray;
 
     
 }
@@ -56,7 +57,7 @@ h1, h3, p{
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    border-color: rgb(52, 79, 159);
+    border-color: grey;
 
 
 }

@@ -11,8 +11,8 @@
     "anchor": "start"
   },
   "config": {"view": {"stroke": "transparent"}},
-  "width": "container",
-  "height": "container",
+  "width": 400,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/pjchart1.csv"
   },

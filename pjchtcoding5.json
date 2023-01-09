@@ -11,7 +11,7 @@
       "anchor": "start"
     },
     "config": {"view": {"stroke": "transparent"}},
-    "width": "container",
+    "width": 400,
     "height": 300,
     "layer": [{
     "data": {

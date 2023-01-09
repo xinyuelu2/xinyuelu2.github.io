@@ -3,15 +3,15 @@
     "title": {
       "text": "NINTENDO'S Expenses and Net Sales",
       "subtitle": [
-        "Instead of regression model, connected scatterplot between 3 operation expenses and net sales from 2018 to 2022 may indicate their relationship more clealier for the lake of data.",
+        "Instead of regression model,connected scatterplot between 3 operation expenses and net sales from 2018 to 2022 may indicate their relationship more clealier for the lake of data.",
         "Source:https://www.nintendo.co.jp/ir/en/finance/highlight/index.html."
       ],
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
-      "anchor": "middle"
+      "anchor": "start"
         },
-    "height": "container",
-    "width": "container",
+    "height": 400,
+    "width": 340,
     "config": {
       "view": {"stroke": "transparent"},
       "locale": {
@@ -33,8 +33,8 @@
           "x": {
             "field": "net sales(million yen)",
             "type": "quantitative",
-            "title": "net sales(million yen)",
-            "scale": {"zero": false}
+            "sort":[],
+            "title": "net sales(million yen)"
             
           },
           "y": {
