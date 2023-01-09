@@ -1,0 +1,339 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Various US measures state by state",
+
+  "title": {
+    "text": "week5",
+    
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+"vconcat": [
+  {
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-A2CW",
+    "format":{"type":"json","property":"years"}
+    },
+  "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+       
+      "title":"Taxes less subsidies, growth rate annual(%)"},
+
+    "x": {
+      "field": "date", 
+      "type": "temporal",
+      "timeUnit":"year",
+      "title":null},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   },
+   {
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-FNTK",
+    "format":{"type":"json","property":"quarters"}
+    },
+    "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+      "sort":[],
+      "title":"Capital Transfers Balance: CP SA: £m"},
+
+    "x": {
+      "field": "year", 
+      "type": "temporal",
+      "sort":[],
+      "timeUnit":"year"},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   },
+   {
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-KGY7",
+    "format":{"type":"json","property":"years"}
+    },
+  "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+       
+      "title":"Total national household final consumption annual growth rate %"},
+
+    "x": {
+      "field": "date", 
+      "type": "temporal",
+      "timeUnit":"year",
+      "title":null},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   },
+   {
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-KH9S",
+    "format":{"type":"json","property":"quarters"}
+    },
+  "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+       
+      "title":"Intangible fixed assets - q-on-q4 growth rate %"},
+
+    "x": {
+      "field": "year", 
+      "type": "temporal",
+      "timeUnit":"year",
+      "title":null},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   },
+   {
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-KTNF",
+    "format":{"type":"json","property":"years"}
+    },
+  "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+       
+      "title":"Secondary Income: Total: Balance: £M)"},
+
+    "x": {
+      "field": "date", 
+      "type": "temporal",
+      "timeUnit":"year",
+      "title":null},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   },
+   {
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-L86F",
+    "format":{"type":"json","property":"years"}
+    },
+  "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+       
+      "title":"Net Secondary Income)"},
+
+    "x": {
+      "field": "date", 
+      "type": "temporal",
+      "timeUnit":"year",
+      "title":null},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   },
+   {
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-L876",
+    "format":{"type":"json","property":"years"}
+    },
+  "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+       
+      "title":"Total Primary Income £M"},
+
+    "x": {
+      "field": "date", 
+      "type": "temporal",
+      "timeUnit":"year",
+      "title":null},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   },{
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-N3Y4",
+    "format":{"type":"json","property":"quarters"}
+    },
+  "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+       
+      "title":"GDP (Average) per head at market prices, q-on-q growth rate %"},
+
+    "x": {
+      "field": "year", 
+      "type": "temporal",
+      "timeUnit":"year",
+      "title":null},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   },
+   {
+  "data": {
+    "url": "https://raw.githubusercontent.com/xinyuelu2/xinyuelu2.github.io/main/data_ONS-XBLX",
+    "format":{"type":"json","property":"years"}
+    },
+  "mark": {
+    "type":"line",
+    "size":3,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 200,
+  "width": 200,
+
+  "encoding": {
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+       
+      "title":"IMF BoP FA PI liability flow debt securities£m"},
+
+    "x": {
+      "field": "date", 
+      "type": "temporal",
+      "timeUnit":"year",
+      "title":null},
+
+    "color": {
+      "field": "main_products", 
+      "type": "ordinal",
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"bottom"},
+      "title":null}
+    
+   }
+   }
+
+  ]
+}

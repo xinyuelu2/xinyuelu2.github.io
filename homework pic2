@@ -1,0 +1,120 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "autosize": {"type": "pad", "contains": "padding", "resize": true},
+    "background": "#ffffff",
+    "padding": 5,
+    "height": 280,
+    "title": {
+      "text": "The spread of prices - garden spades - 2022",
+      "subtitle": ["ONS price quotes: price and frequency", ""],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "style": "cell",
+    "data": [
+      {
+        "name": "source_0",
+        "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/prices_630505.csv",
+        "format": {"type": "csv", "delimiter": ","},
+        "transform": [
+          {
+            "type": "window",
+            "params": [null],
+            "as": ["id"],
+            "ops": ["rank"],
+            "fields": [null],
+            "sort": {"field": [], "order": []},
+            "groupby": ["price", "year"]
+          },
+          {"type": "filter", "expr": "datum.year==2022"}
+        ]
+      },
+      {
+        "name": "data_0",
+        "source": "source_0",
+        "transform": [
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"price\"]) && isFinite(+datum[\"price\"])"
+          }
+        ]
+      }
+    ],
+    "signals": [
+      {
+        "name": "width",
+        "init": "isFinite(containerSize()[0]) ? containerSize()[0] : 200",
+        "on": [
+          {
+            "update": "isFinite(containerSize()[0]) ? containerSize()[0] : 200",
+            "events": "window:resize"
+          }
+        ]
+      }
+    ],
+    "marks": [
+      {
+        "name": "marks",
+        "type": "symbol",
+        "style": ["circle"],
+        "from": {"data": "data_0"},
+        "encode": {
+          "update": {
+            "opacity": {"value": 1},
+            "strokeWidth": {"value": 1},
+            "size": {"value": 6.5},
+            "fill": {"value": "#e6224b"},
+            "ariaRoleDescription": {"value": "circle"},
+            "description": {
+              "signal": "\"price: \" + (format(datum[\"price\"], \"\")) + \"; id: \" + (isValid(datum[\"id\"]) ? datum[\"id\"] : \"\"+datum[\"id\"])"
+            },
+            "x": [
+              {
+                "test": "!isValid(datum[\"price\"]) || !isFinite(+datum[\"price\"])",
+                "value": 0
+              },
+              {"scale": "x", "field": "price"}
+            ],
+            "y": {"scale": "y", "field": "id"},
+            "shape": {"value": "circle"}
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "name": "x",
+        "type": "linear",
+        "domain": {"data": "data_0", "field": "price"},
+        "range": [0, {"signal": "width"}],
+        "zero": false,
+        "nice": true
+      },
+      {
+        "name": "y",
+        "type": "point",
+        "domain": {
+          "data": "source_0",
+          "field": "id",
+          "sort": {"order": "descending", "field": "key"}
+        },
+        "range": [0, {"signal": "height"}],
+        "padding": 0.5
+      }
+    ],
+    "axes": [
+      {
+        "scale": "x",
+        "orient": "bottom",
+        "grid": false,
+        "labels": true,
+        "labelFlush": true,
+        "labelOverlap": true,
+        "tickCount": {"signal": "ceil(width/40)"},
+        "zindex": 0
+      }
+    ],
+    "config": {"style": {"cell": {"stroke": "transparent"}}}
+  }
