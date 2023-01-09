@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Portfolio</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index2.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>WEEK1</h1>
+        
+        <h3>Annual Rental Prices Growth </h3>
+        <p>The first chart shows the annual growth in rental prices in the UK from 2016 to 2022.</p>
+        <div class="chart" id="Chart1"></div>
+
+        <h3>Residential Loans To Individual </h3>
+        <p>My second chart displays the individual residential loans in the UK between 2008 and 2022.</p>
+        <div class="chart" id="Chart2"> </div>
+  
+        <h1>WEEK2</h1>
+        
+        <h3>chart1 </h3>
+        <p></p>
+        <div class="chart" id="Chart3"></div>
+
+        <h3>chart2</h3>
+        <p></p>
+        <div class="chart" id="Chart4"> </div>
+
+        <p>COMMENT: The most risky year is 1984 with the highest IMF loan-to-global gdp ratio rather than 2022 in the Chart1.</p>
+    
+        <h1>WEEK3</h1>
+        
+        <h3>chart1 </h3>
+        <p></p>
+        <div class="chart" id="Chart5"></div>
+
+        <h3>chart2</h3>
+        <p></p>
+        <div class="chart" id="Chart6"> </div>
+        <p>COMMENT: chart2 could compare through time, see the whole trend and choose the option,which is clearer.</p>
+    
+        <h1>WEEK4</h1>
+        
+        <a href="https://colab.research.google.com/drive/1CIfTJ_BMjWk-kGqxML-HFAoDjqyGD5PJ?usp=sharing" id="link1">google colab</a>
+        <h3>chart1</h3>
+
+        <div class="chart" id="Chart7"></div>
+        
+        <p>COMMENT:skim the website and try to find tables. I found it once. </p>
+       
+        <p></p>
+
+        <h1>WEEK5</h1>
+        
+        <h3>chart1</h3>
+        <div class="chart" id="Chart8"></div>
+        <a href="https://colab.research.google.com/drive/1EjYvkU4RC4so-BGSWmbqCAhXKpM7ftHW?usp=sharing" id="link2">week5 google colab</a>
+
+
+        <h1>WEEK9</h1>
+        
+        <p></p><a href="https://github.com/xinyuelu2/xinyuelu2.github.io/blob/main/pjchtcoding3.json" id="link3">week9 vegalite code</a>
+        <h3>chart1 </h3>
+        <p></p>
+        <div class="chart" id="Chart9"></div>
+        
+        
+        <h3>chart2</h3>
+        <p></p>
+        <div class="chart" id="Chart10"> </div>
+        <a href=https://github.com/xinyuelu2/xinyuelu2.github.io/blob/main/pjch2coding.json id="link4">week9 vegalite code2</a>
+
+
+
+
+
+
+
+    </div> 
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "homework pic1.json";
+    var myChart2 = "homework pic2.json";
+    var myChart3 = "week2_homework_chart1.json";
+    var myChart4 = "week2_homework_chart2.json";
+    var myChart5 = "homework3chart1.json";
+    var myChart6 = "homework3chart2.json";
+    var myChart7 = "homework4chart.json";
+    var myChart8 = "week5.json";
+    var myChart9 = "pjchtcoding3.json";
+    var myChart10 = "pjch2coding.json";
+
+    // Embed charts:
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+</script>
+
+</html>
+
